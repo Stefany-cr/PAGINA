@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Camisería</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #A3D5FF;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">La Camisería | multimarca | Shein Valledupar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="acercadenosotros.html">Acerca de Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="nuestroequipo.html">Nuestro Equipo</a></li>
+          <li class="nav-item"><a class="nav-link" href="comunidad.html">Comunidad y Participación</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="iniciarsesion.html">Iniciar Sesión</a></li>
+          <li class="nav-item"><a class="nav-link" href="cerrar_sesion.html">Cerrar Sesión</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <h1 class="text-center">Editar Acerca de Nosotros</h1>
+    <form action="editar_acerca.php" method="POST" enctype="multipart/form-data">
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/MISION.jpg"class="d-block" alt="" style="width: 650px; display: flex; margin: auto; height: 650px;">
+            <div class="carousel-caption d-none d-md-block text-center">
+              <h5>Misión</h5>
+              <p>Nuestra misión es ofrecer suéteres de calidad que combinan estilo y comodidad, inspirando confianza y creatividad en nuestros clientes.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/VISION.jpg" class="d-block" alt="" style="width: 650px; display: flex; margin: auto; height: 650px;">
+            <div class="carousel-caption d-none d-md-block text-center">
+              <h5>Visión</h5>
+              <p>Ser la tienda de referencia para suéteres modernos y de alta calidad, reconocida por nuestra atención al detalle y excelente servicio al cliente.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/HISTORIA.jpeg" class="d-block" alt="" style="width: 650px; display: flex; margin: auto; height: 650px;">
+            <div class="carousel-caption d-none d-md-block text-center">
+              <h5>Nuestra Historia</h5>
+              <p>La Camisería nació en julio de 2024, y hemos trabajado con pasión para brindar prendas que expresen el estilo único de cada persona.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="form-group mt-4">
+        <label for="nuevaDescripcion">Nueva descripción:</label>
+        <textarea class="form-control" id="nuevaDescripcion" name="nuevaDescripcion" rows="4"></textarea>
+      </div>
+      <div class="form-group mt-3">
+        <label for="nuevaImagenCarrusel">Nueva imagen para el carrusel (opcional):</label>
+        <input type="file" class="form-control" id="nuevaImagenCarrusel" name="nuevaImagenCarrusel">
+      </div>
+      <div class="mt-4 text-center">
+        <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+        <a href="administrador.html" class="btn btn-secondary ms-2">Regresar</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
